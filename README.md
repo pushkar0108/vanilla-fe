@@ -1,7 +1,7 @@
 # vanilla-fe
 
 
-## Components
+## Basic Building Blocks
 1. Router
     - provide a way to create links inside your app
     - provide a way to change views for the user
