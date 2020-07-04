@@ -1,23 +1,24 @@
 # vanilla-fe
 
-FE architecture
-    1. Router
-        - provide a way to create links inside your app
-        - provide a way to change views for the user
-        - query params, and easy implementation of custom logics
-        - it takes care of updating the address bar without actually refreshing the page
-    2. State manager | like redux, or models in angular
-    3. Business Logic | (services in angular) / or js modules in react
-    4. HTTP library | to intract with BE
-        XMLHttpRequest, fetch, axios, $http
-    5. User Interface Layer | to intract with user
 
-    Additional Features
-    6. Cache
-    7. Event System/buses, like postman
+## Components
+1. Router
+    - provide a way to create links inside your app
+    - provide a way to change views for the user
+    - query params, and easy implementation of custom logics
+    - it takes care of updating the address bar without actually refreshing the page
+2. State manager | like redux, or models in angular
+3. Business Logic | (services in angular) / or js modules in react
+4. HTTP library | to intract with BE
+    XMLHttpRequest, fetch, axios, $http
+5. User Interface Layer | to intract with user
+
+Additional Features
+6. Cache
+7. Event System/buses, like postman
 
 
-Model-View-Controller Architecture
+## Model-View-Controller Architecture
     model <----> controller <-----> view
 
     1. Model - State manager
@@ -30,6 +31,7 @@ Model-View-Controller Architecture
       <script src="script.min.js"></script>
     </body>
 
+```js
     class Model {
         constructor(){ 
             this.todos = [];
@@ -83,3 +85,4 @@ Model-View-Controller Architecture
     }
 
     const app = new Controller(new Model(), new View());
+```
