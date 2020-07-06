@@ -1,6 +1,6 @@
 'use strict';
 
-import HTTP from './http/http.js';
+import HTTP from './services/http.js';
 
 class Router {
   constructor(routes) {
